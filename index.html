@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>anonymity for you</title>
+  <style>
+    body, html{
+    	background: #000;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    *{
+    	color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="text"></h1>
+  <script>
+  	var text = document.getElementById("text");
+      if(localStorage.getItem("a") == null) {
+      	text.innerText = "https://youtube.com/watch?v=7F3dKK5-FsM&si=EnSIkaIECMiOmarE"
+          localStorage.setItem("a","2")
+      }else{
+      	text.innerText = localStorage.getItem("a")
+      	if(localStorage.getItem("a") == "2"){
+      	     localStorage.setItem("a","52")
+          }
+      }
+  </script>
+</body>
+</html>
